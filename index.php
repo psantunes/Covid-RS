@@ -26,8 +26,6 @@
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width"         content="1000" />
     <meta property="og:image:height"         content="544" />
-
-
     <link href="favicon.ico" rel="shortcut icon" />
     <script src="https://kit.fontawesome.com/a827d7830e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -113,7 +111,7 @@
     <footer>
        <p>Site atualizado através de informações divulgadas pela imprensa. As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados. Para complementar ou corrigir informações, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
        <p>Última atualização em <?php echo date('m/d/Y H:i', strtotime($lastdate)); ?>.</p>
-        <p><small>Desenvolvido por <a href="https://jornalismodigital.jor.br/">Antonio Paulo Serpa Antunes</a>. Código-fonte disponível no <a href="https://github.com/psantunes/">Github</a>.</p></small>
+        <p><small>Desenvolvido por <a href="https://jornalismodigital.jor.br/">Antonio Paulo Serpa Antunes</a>. Código-fonte disponível no <a href="https://github.com/psantunes/Covid-RS">Github</a>.</p></small>
     </footer>
 </body>
 </html>

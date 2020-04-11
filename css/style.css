@@ -41,9 +41,9 @@ footer{
     display: flex; 
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 174px;
+    width: 164px;
     border: 1px solid #494345;
-    margin: 5px;
+    margin: 4px;
 }
 .card-block {
     padding: 10px;
@@ -64,8 +64,8 @@ footer{
 
 .numero {
     position: absolute;
-    top: 210px;
-    left: 68px;
+    top: 195px;
+    left: 60px;
     display: inline-block;
     overflow: hidden;
     box-sizing: border-box;
