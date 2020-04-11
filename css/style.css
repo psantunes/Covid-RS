@@ -1,0 +1,80 @@
+body {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #2a2438;
+    color: 352f44
+}
+
+h1 {
+    padding: 20px 0 0 0;
+}
+h1, h2 {
+    color: #dbd8e3;
+}
+h2 {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: #352f44;
+}
+a, a:visited {
+    color: #dbd8e3;
+}
+a:hover {
+    color: #5c5470;
+}
+footer{
+    text-align: center;
+    padding: 50px 25px 0 25px;
+    color: #dbd8e3;
+}
+.row {
+    margin: 0;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex; 
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 174px;
+    border: 1px solid #494345;
+    margin: 5px;
+}
+.card-block {
+    padding: 10px;
+    height: 225px;
+}
+.card-footer {
+    text-align: right;
+    padding: 5px 10px;
+    background-color: #dbd8e3;
+}
+.card-footer a, .card-footer a:visited {
+    color: #5c5470;
+}
+
+.card-footer a:hover {
+    color: #dbd8e3;
+}
+
+.numero {
+    position: absolute;
+    top: 210px;
+    left: 68px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: 1px solid #5c5470;
+    border-radius: 50%;
+    color: #dbd8e3;
+    background-color: #5c5470;
+    padding-top: 5px;
+}
