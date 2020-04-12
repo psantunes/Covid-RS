@@ -23,6 +23,7 @@ h4 {
 }
 a, a:visited {
     color: #dbd8e3;
+    text-decoration: underline;
 }
 a:hover {
     color: #5c5470;
@@ -46,8 +47,10 @@ footer{
     margin: 4px;
 }
 .card-block {
-    padding: 10px;
+    padding: 12px;
     height: 225px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
 }
 .card-footer {
     text-align: right;
@@ -56,6 +59,7 @@ footer{
 }
 .card-footer a, .card-footer a:visited {
     color: #5c5470;
+    text-decoration: none;
 }
 
 .card-footer a:hover {
@@ -77,4 +81,22 @@ footer{
     color: #dbd8e3;
     background-color: #5c5470;
     padding-top: 5px;
+}
+.tooltip-primary~.tooltip>.tooltip-inner {
+    background-color: blue;
+  }
+  
+  .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #5c5470;
+    border-radius: .25rem;
+}
+  .tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 5px 5px 0;
+    border-top-color: #5c5470;
 }

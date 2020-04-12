@@ -27,9 +27,22 @@
     <meta property="og:image:width"         content="1000" />
     <meta property="og:image:height"         content="544" />
     <link href="favicon.ico" rel="shortcut icon" />
-    <script src="https://kit.fontawesome.com/a827d7830e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a827d7830e.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+</script>
+
+
+
 </head>
 <body>
 
@@ -63,7 +76,7 @@
                             }
                             echo "'>
                             <div class='card-block'>
-                                <h5 class='numero'>".$line['id']."</h5>
+                                <h5 class='numero' data-toggle='tooltip' title='".$line['id']."ª vítima da Covid-19 no RS'>".$line['id']."</h5>
                                 <h4 class='card-title mt-3'>";
                                 if ($line['nome'] != null) {
                                     echo $line['nome']."</h4><div class='card-text'>";
@@ -95,7 +108,7 @@
                                 echo "</div>
                             </div>
                             <div class='card-footer'>
-                                <small>Fonte:</small> <a href='".$line['link1']."' target='_blank'><i class='fas fa-link' title='link'></i></a>";
+                                <small><a href='".$line['link1']."' target='_blank'>Fonte:</small> <i class='fas fa-link' title='link'></i></a>";
                             if ($line['link2'] != NULL) {
                                 echo " | <a href='".$line['link1']."' target='_blank'><i class='fas fa-link' title='link'></i></a>";
                             } 
@@ -113,5 +126,6 @@
        <p>Última atualização em <?php echo date('m/d/Y H:i', strtotime($lastdate)); ?>.</p>
         <p><small>Desenvolvido por <a href="https://jornalismodigital.jor.br/">Antonio Paulo Serpa Antunes</a>. Código-fonte disponível no <a href="https://github.com/psantunes/Covid-RS">Github</a>.</p></small>
     </footer>
+
 </body>
 </html>
