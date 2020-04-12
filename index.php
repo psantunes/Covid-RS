@@ -22,10 +22,10 @@
     <meta property="og:type"          content="article" />
     <meta property="og:title"         content="Toda vida importa" />
     <meta property="og:description"   content="Tributo às vítimas da Covid-19 no Rio Grande do Sul" />
-    <meta property="og:image"         content="https://jornalismodigital.jor.br/covidrs/img/card.jpg" />
+    <meta property="og:image"         content="https://jornalismodigital.jor.br/covidrs/img/card2.png" />
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width"         content="1000" />
-    <meta property="og:image:height"         content="544" />
+    <meta property="og:image:width"         content="600" />
+    <meta property="og:image:height"         content="315" />
     <link href="favicon.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -39,10 +39,7 @@
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();   
         });
-</script>
-
-
-
+    </script>
 </head>
 <body>
 
@@ -100,12 +97,7 @@
                                     echo $line['idade']." anos</h4><div class='card-text'>Residente em ";
                                 }
                                 echo $line['cidaderesidencia'].", faleceu no ".$line['hospital'].", em ".$line['cidadeobito'];
-                                if ($line['fatorderisco'] == 1) {
-                                    echo ". Fatores de risco: ".$line['nomedoenca'].".";
-                                } else {
-                                    echo ". Não pertencia a nenhum grupo risco.";    
-                                }
-                                echo "</div>
+                                echo ".</div>
                             </div>
                             <div class='card-footer'>
                                 <small><a href='".$line['link1']."' target='_blank'>Fonte:</small> <i class='fas fa-link' title='link'></i></a>";
