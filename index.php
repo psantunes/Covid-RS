@@ -102,7 +102,7 @@
                             <div class='card-footer'>
                                 <small><a href='".$line['link1']."' target='_blank'>Fonte:</small> <i class='fas fa-link' title='link'></i></a>";
                             if ($line['link2'] != NULL) {
-                                echo " | <a href='".$line['link1']."' target='_blank'><i class='fas fa-link' title='link'></i></a>";
+                                echo " | <a href='".$line['link2']."' target='_blank'><i class='fas fa-link' title='link'></i></a>";
                             } 
                             echo "</div></div>";
                             $lastdate = $line['datapub'];
@@ -114,8 +114,8 @@
 
     
     <footer>
-       <p>Site atualizado através de informações divulgadas pela imprensa. As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados. Para complementar ou corrigir informações, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
-       <p>Última atualização em <?php echo date('m/d/Y H:i', strtotime($lastdate)); ?>.</p>
+        <p>Site atualizado através de informações divulgadas pela imprensa. As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados. Para complementar ou corrigir informações, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
+        <p>Última atualização em <?php echo date('d/m/Y H:i', strtotime($lastdate)); ?>.</p>
         <p><small>Desenvolvido por <a href="https://jornalismodigital.jor.br/">Antonio Paulo Serpa Antunes</a>. Código-fonte disponível no <a href="https://github.com/psantunes/Covid-RS">Github</a>.</p></small>
     </footer>
 
