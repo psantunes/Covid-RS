@@ -96,8 +96,16 @@
                                     
                                     echo $line['idade']." anos</h4><div class='card-text'>Residente em ";
                                 }
-                                echo $line['cidaderesidencia'].", faleceu no ".$line['hospital'].", em ".$line['cidadeobito'];
-                                echo ".</div>
+                                echo $line['cidaderesidencia'].", faleceu ";
+								if ($line['hospital'][0] == "H") {
+									echo "no ";
+								} elseif ($line['hospital'][0] == "U") {
+									echo "na ";
+								} else  {
+									echo "em ";
+								}
+
+                                echo $line['hospital'].", em ".$line['cidadeobito']."</div>
                             </div>
                             <div class='card-footer'>
                                 <small><a href='".$line['link1']."' target='_blank'>Fonte:</small> <i class='fas fa-link' title='link'></i></a>";
@@ -114,8 +122,9 @@
 
     
     <footer>
-        <p>Site atualizado através de informações divulgadas pela imprensa. As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados. Para complementar ou corrigir informações, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
-        <p>Última atualização em <?php echo date('d/m/Y H:i', strtotime($lastdate)); ?>.</p>
+        <p>Site atualizado através de informações divulgadas pela imprensa. As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados ou reproduzidas de veículos de comunicação. Para complementar ou corrigir informações, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>. Última atualização em <?php echo date('d/m/Y H:i', strtotime($lastdate)); ?>.</p>
+		<h4>Veja também o site <a href="https://inumeraveis.com.br/">Inumeráveis</a>.</h4>
+        
         <p><small>Desenvolvido por <a href="https://jornalismodigital.jor.br/">Antonio Paulo Serpa Antunes</a>. Código-fonte disponível no <a href="https://github.com/psantunes/Covid-RS">Github</a>.</p></small>
     </footer>
 
