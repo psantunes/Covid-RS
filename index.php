@@ -29,25 +29,17 @@
     <link href="favicon.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script src="https://kit.fontawesome.com/a827d7830e.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
-        });
-    </script>
 </head>
-<body>
+<body id="main">
+
 
     <header>
-        <h1>Toda vida importa.</h1>
-        <h2>memorial para as vítimas da Covid-19 no Rio Grande do Sul</h2>
-        </header>
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <h1>Toda vida importa.</h1>
+                <h2>memorial para as vítimas da Covid-19 no Rio Grande do Sul</h2>     
+    </header>
     
+
     <section>
 
         <div class="row">
@@ -99,7 +91,7 @@
                                 echo $line['cidaderesidencia'].", faleceu ";
 								if ($line['hospital'][0] == "H") {
 									echo "no ";
-								} elseif ($line['hospital'][0] == "U") {
+								} elseif ($line['hospital'][0] == "U" || $line['hospital'][0] == "F") {
 									echo "na ";
 								} else  {
 									echo "em ";
@@ -120,13 +112,48 @@
             </div>
     </section>
 
-    
-    <footer>
-        <p>Site atualizado através de informações divulgadas pela imprensa. As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados ou reproduzidas de veículos de comunicação. Para complementar ou corrigir informações, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>. Última atualização em <?php echo date('d/m/Y H:i', strtotime($lastdate)); ?>.</p>
-		<h4>Veja também o site <a href="https://inumeraveis.com.br/">Inumeráveis</a>.</h4>
+    <aside id="mySidebar">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">×</a>
+
+        <p>A plataforma <strong>Toda vida importa</strong> é atualizada a partir do registro de óbitos da Secretaria Estadual da Saúde do Rio Grande do Sul,
+        complementada com informações divulgadas por secretarias municipais ou pela imprensa.
+        As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados ou reproduzidas em veículos de comunicação.
+        Para complementar, corrigir ou solicitar a inclusão de dados, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
+
+        <p>Recomendamos também o acesso aos sites:<br>
+            <a href="https://inumeraveis.com.br/">Inumeráveis</a><br>e <br> <a href="https://www.facebook.com/memorialcoronabrasil/">Memorial das Vítimas do Coronavírus no Brasil</a>.</p>
         
+        <p>Última atualização em <?php echo date('d/m/Y H:i', strtotime($lastdate)); ?>.</p>
+
+    </aside>
+
+    
+    <footer>        
         <p><small>Desenvolvido por <a href="https://jornalismodigital.jor.br/">Antonio Paulo Serpa Antunes</a>. Código-fonte disponível no <a href="https://github.com/psantunes/Covid-RS">Github</a>.</p></small>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a827d7830e.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("mySidebar").style.padding = "65px 15px 0 15px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("mySidebar").style.padding = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
 
 </body>
 </html>

@@ -3,11 +3,14 @@ body {
     font-size: 14px;
     text-align: center;
     background-color: #2a2438;
-    color: 352f44
 }
+#main {
+    transition: margin-left .5s;
+  }
 
 h1 {
-    padding: 20px 0 0 0;
+    padding: 25px 0 15px 0;
+    font-size: 2.1rem;
 }
 h1, h2 {
     color: #dbd8e3;
@@ -106,3 +109,43 @@ section {
     border-width: 5px 5px 0;
     border-top-color: #5c5470;
 }
+
+aside {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  aside a, aside a:visited {
+    color: #333;
+  }
+    
+  aside .close {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 35px;
+  }
+  
+  .openbtn {
+    float: left;
+    margin: 15px 0 0 15px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #dbd8e3;
+  }
+  
