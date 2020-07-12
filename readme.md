@@ -4,6 +4,7 @@ Página criada para conscientizar a população para a gravidade da Covid-19, mo
 
 O site foi criado e é mantido por Antonio Paulo Serpa Antunes, jornalista e estudante de Tecnologia em Sistemas para Internet do IFRS.
 
+
 ## Projeto
 
 O site foi desenvolvido ao longo de três dias, incluindo a pesquisa e coleta de dados dos primeiros 16 óbitos. Com o objetivo de colocar rapidamente a página optou-se por um desenvolvimento classico: com a criação de um banco de dados em MySQL e um único script PHP que exibe os cards em HTML. Para construção rápida dos cards, adotou-se o Bootstrap.
@@ -16,8 +17,11 @@ A conexão com o banco precisa ser setada num arquivo config.php.
 
 ## Desenvolvimento Futuro
 
-O site deve ganhar um formulário para receber informações dos familiares das vítimas.
+O site previa outras duas fases de desenvolvimento: uma área de administração, que permitiria o CRUD dos dados, e uma ferramenta de busca e filtro de óbitos, para facilirar a consulta aos dados.
 
-Uma página de cadastro de óbitos ainda deverá ser criada (atualmente o cadastro é feito diretamente no banco).
+Informações adicionais, como a data dos óbitos ou as comorbidades das vítimas, quando disponíveis, também foram armazenados no banco de dados para uso futuro com fins estatísticos.
 
-Dados adicionais como a data dos óbitos ou as comorbidades das vítimas estão sendo armazenadas no banco de dados e futuramente poderão ser reunidas em tabelas e gráficos para fins estatísticos.
+## Encerramento do projeto
+
+Infelizmente, o projeto teve que ser descontinuidado em julho de 2020, em razão de outros compromissos pessoais e da escalada de óbidos por Covid-19 no Rio Grande do Sul.
+

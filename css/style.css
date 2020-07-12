@@ -122,7 +122,7 @@ aside {
     transition: 0.5s;
   }
   
-  aside a, aside a:visited {
+  a, a:visited {
     color: #333;
   }
     
@@ -149,3 +149,15 @@ aside {
     background-color: #dbd8e3;
   }
   
+#alert {
+    background-color: white;
+    padding: 14px 0 7px 0;
+}
+h6 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h6 a {
+    text-decoration: underline;
+}

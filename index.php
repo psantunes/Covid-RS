@@ -34,13 +34,19 @@
 
 
     <header>
+    <section id="alert">
+        <h6>Projeto encerrado em 5 de julho de 2020. <a href="#" onclick="openNav()">Saiba mais</a>.</h6>
+    </section>
+
+
                 <button class="openbtn" onclick="openNav()">☰</button>
                 <h1>Toda vida importa.</h1>
-                <h2>memorial para as vítimas da Covid-19 no Rio Grande do Sul</h2>     
+                <h2>memorial para as vítimas da Covid-19 no Rio Grande do Sul***</h2>
     </header>
-    
 
-    <section>
+
+
+    <article>
 
         <div class="row">
 
@@ -110,20 +116,26 @@
             mysqli_close($connection);
         ?>
             </div>
-    </section>
+    </article>
 
     <aside id="mySidebar">
         <a href="javascript:void(0)" class="close" onclick="closeNav()">×</a>
 
-        <p>A plataforma <strong>Toda vida importa</strong> é atualizada a partir do registro de óbitos da Secretaria Estadual da Saúde do Rio Grande do Sul,
-        complementada com informações divulgadas por secretarias municipais ou pela imprensa.
-        As fotos publicadas foram extraídas das redes sociais das vítimas que tiveram seus nomes divulgados ou reproduzidas em veículos de comunicação.
-        Para complementar, corrigir ou solicitar a inclusão de dados, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
+        <p>A plataforma <strong>Toda vida importa</strong> foi criada pelo jornalista e desenvolvedor Antonio Paulo Antunes em 11 de abril de 2020 com o
+        objetivo de ser mais um ferramenta de conscientização da população no combate a epidemia de Covid-19 no Rio Grande do Sul. Outras motivações do projeto
+        estão <a href="https://www.jornalismodigital.jor.br/porque-toda-a-vida-importa-uma-contribuicao-no-combate-a-covid-19/">descritas neste post</a>.</p>
+        <p>Diariamente o site era atualizado tomando como base o registro de óbitos feito pela Secretaria Estadual da Saúde nas redes sociais,
+        complementada com informações divulgadas por secretarias municipais ou pela imprensa. As fotos publicadas na página foram extraídas das redes sociais
+        das vítimas que tiveram seus nomes divulgados ou são reproduções de veículos de comunicação.</p>
+        <p>Infelizmente, em razão da escalada dos óbitos por coronavírus no RS, a coleta de dados, que era tocado por uma única pessoa, foi encerrada, mas
+        a página seguirá no ar, relembrando as primeiras 727 vítimas. Para complementar, corrigir ou solicitar a inclusão de dados de familiares ou
+        conhecidos, <a href="mailto:pauloserpaantunes@gmail.com">envie um e-mail</a>.</p>
 
-        <p>Recomendamos também o acesso aos sites:<br>
-            <a href="https://inumeraveis.com.br/">Inumeráveis</a><br>e <br> <a href="https://www.facebook.com/memorialcoronabrasil/">Memorial das Vítimas do Coronavírus no Brasil</a>.</p>
+
+
+        <p>Recomendamos também o acesso aos sites <a href="https://inumeraveis.com.br/">Inumeráveis</a> e <a href="https://www.facebook.com/memorialcoronabrasil/">Memorial das Vítimas do Coronavírus no Brasil</a>.</p>
         
-        <p>Última atualização em <?php echo date('d/m/Y H:i', strtotime($lastdate)); ?>.</p>
+        <p>Última atualização em 12/7/2020.</p>
 
     </aside>
 
