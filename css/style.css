@@ -22,7 +22,15 @@ h2 {
 h4 {
     font-size: 1.1rem;
 }
-
+h6 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h6 a, h6 a:visited {
+    color: #333;
+    text-decoration: underline;
+}
 .card-title h4 {
     color: #352f44;
 }
@@ -120,12 +128,11 @@ aside {
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-  }
-  
-  a, a:visited {
+}
+aside a, aside a:visited {
     color: #333;
-  }
-    
+  }    
+
   aside .close {
     text-decoration: none;
     position: absolute;
@@ -152,12 +159,4 @@ aside {
 #alert {
     background-color: white;
     padding: 14px 0 7px 0;
-}
-h6 {
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-h6 a {
-    text-decoration: underline;
 }
