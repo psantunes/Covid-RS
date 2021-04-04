@@ -17,11 +17,10 @@ A conexão com o banco precisa ser setada num arquivo config.php.
 
 ## Desenvolvimento Futuro
 
-O site previa outras duas fases de desenvolvimento: uma área de administração, que permitiria o CRUD dos dados, e uma ferramenta de busca e filtro de óbitos, para facilirar a consulta aos dados.
+O site previa outras duas fases de desenvolvimento: uma área de administração, que permitiria o CRUD dos dados, e uma ferramenta de busca e filtro de óbitos, para facilitar a consulta aos dados.
 
 Informações adicionais, como a data dos óbitos ou as comorbidades das vítimas, quando disponíveis, também foram armazenados no banco de dados para uso futuro com fins estatísticos.
 
 ## Encerramento do projeto
 
 Infelizmente, o projeto teve que ser descontinuidado em julho de 2020, em razão de outros compromissos pessoais e da escalada de óbidos por Covid-19 no Rio Grande do Sul.
-
